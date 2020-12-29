@@ -12,7 +12,9 @@ function handleSubmit(event) {
         return res.json()
     })
     .then(function(data) {
-        document.getElementById('results').innerHTML = data.message
+        document.getElementById('results').innerHTML = data.message;
+        document.getElementById('title').innerHTML = data.title;
+        document.getElementById('time').innerHTML = data.time;
     })
 }
 
